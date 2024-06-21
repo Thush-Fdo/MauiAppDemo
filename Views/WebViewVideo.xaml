@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppDemo.Views.WebViewVideo"
              Shell.NavBarIsVisible="True"
-             BackgroundColor="{StaticResource PageBackground}"
+             BackgroundColor="{StaticResource PrimaryNavColor}"
              Title="WebView">
-    <VerticalStackLayout
-        Spacing="25"
-        Padding="30,0"
-        VerticalOptions="Center">
+    <StackLayout Margin="10">
         
-        <WebView Source="https://killerplayer.com/new/video/76254e5a-f35b-4892-b4f9-5bda5881500b" />
+        <WebView HeightRequest="400"
+                 BackgroundColor="{StaticResource PrimaryNavColor}" 
+                 Source="https://killerplayer.com/new/video/76254e5a-f35b-4892-b4f9-5bda5881500b" />
+        <!-- <WebView Source="https://learn.microsoft.com/dotnet/maui" /> -->
         
-    </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>

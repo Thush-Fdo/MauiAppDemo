@@ -120,6 +120,7 @@
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.AssemblyInfoInputs.cache
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.AssemblyInfo.cs
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.csproj.CoreCompileInputs.cache
+/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.sourcelink.json
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/XamlC.stamp
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/MauiAppDemo.pdb
@@ -134,8 +135,6 @@
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/resolvedassemblies.hash
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/AngleSharp.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/ar/Microsoft.Maui.Controls.resources.dll
-/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/arm64-v8a/System.Private.CoreLib.dll
-/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/armeabi-v7a/System.Private.CoreLib.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/ca/Microsoft.Maui.Controls.resources.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/CommunityToolkit.Maui.Core.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/CommunityToolkit.Maui.dll
@@ -299,6 +298,7 @@
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Numerics.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Numerics.Vectors.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.ObjectModel.dll
+/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Private.CoreLib.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Private.DataContractSerialization.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Private.Uri.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Private.Xml.dll
@@ -383,8 +383,6 @@
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/uk/Microsoft.Maui.Controls.resources.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/vi/Microsoft.Maui.Controls.resources.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/WindowsBase.dll
-/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/x86/System.Private.CoreLib.dll
-/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/x86_64/System.Private.CoreLib.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/Xamarin.Android.Glide.Annotations.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/Xamarin.Android.Glide.DiskLruCache.dll
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/Xamarin.Android.Glide.dll
@@ -1145,4 +1143,3 @@
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
-/Users/Shermin/Documents/Projects/MAUI_Projects/MauiAppDemo/MauiAppDemo/obj/Debug/net8.0-android/android/assets/System.Private.CoreLib.dll
