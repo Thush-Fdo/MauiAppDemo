@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDemo.Views.Notifications"
+             xmlns:fontAwesome="clr-namespace:MauiAppDemo.Helpers"
+             Shell.NavBarIsVisible="True"
+             BackgroundColor="{StaticResource PageBackground}"
+             Title="Notifications">
+    
+    <ScrollView>        
+        <VerticalStackLayout>
+            <Frame Padding="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10">
+
+                <Frame BackgroundColor="Beige">
+                    <Grid HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"                         
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                        FontFamily="FontAwesome6Solid"
+                                        FontSize="Large"
+                                        TextColor="Chartreuse"/>
+                                    <Span Text=" "/>
+                                    <Span Text="Sat, 24-03-16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="3" Grid.Row="0"                      
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="12:30 PM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="0" Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Text="Tute Pack Dispatched"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="Medium"/>
+                                
+                        <Label Grid.Column="0" Grid.Row="2"
+                                Grid.ColumnSpan="4"
+                                LineBreakMode="WordWrap"
+                                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, elit tincidunt ornare fermentum, nisi libero dapibus lectus, sed interdum mauris eros nec arcu."
+                                TextColor="Black"/>
+                    </Grid>
+                </Frame>
+            </Frame>
+            
+            <Frame Padding="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10">
+
+                <Frame BackgroundColor="Beige">
+                    <Grid HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"                         
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                        FontFamily="FontAwesome6Solid"
+                                        FontSize="Large"
+                                        TextColor="Chartreuse"/>
+                                    <Span Text=" "/>
+                                    <Span Text="Sat, 24-03-16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="3" Grid.Row="0"                      
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="12:30 PM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="0" Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Text="Tute Pack Dispatched"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="Medium"/>
+                                
+                        <Label Grid.Column="0" Grid.Row="2"
+                                Grid.ColumnSpan="4"
+                                LineBreakMode="WordWrap"
+                                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, elit tincidunt ornare fermentum, nisi libero dapibus lectus, sed interdum mauris eros nec arcu."
+                                TextColor="Black"/>
+                    </Grid>
+                </Frame>
+            </Frame>
+            
+            <Frame Padding="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10">
+
+                <Frame BackgroundColor="Beige">
+                    <Grid HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"                         
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                        FontFamily="FontAwesome6Solid"
+                                        FontSize="Large"
+                                        TextColor="Chartreuse"/>
+                                    <Span Text=" "/>
+                                    <Span Text="Sat, 24-03-16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="3" Grid.Row="0"                      
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="12:30 PM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="0" Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Text="Tute Pack Dispatched"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="Medium"/>
+                                
+                        <Label Grid.Column="0" Grid.Row="2"
+                                Grid.ColumnSpan="4"
+                                LineBreakMode="WordWrap"
+                                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, elit tincidunt ornare fermentum, nisi libero dapibus lectus, sed interdum mauris eros nec arcu."
+                                TextColor="Black"/>
+                    </Grid>
+                </Frame>
+            </Frame>
+            
+            <Frame Padding="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10">
+
+                <Frame BackgroundColor="Beige">
+                    <Grid HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"                         
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                        FontFamily="FontAwesome6Solid"
+                                        FontSize="Large"
+                                        TextColor="Chartreuse"/>
+                                    <Span Text=" "/>
+                                    <Span Text="Sat, 24-03-16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="3" Grid.Row="0"                      
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="12:30 PM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="0" Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Text="Tute Pack Dispatched"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="Medium"/>
+                                
+                        <Label Grid.Column="0" Grid.Row="2"
+                                Grid.ColumnSpan="4"
+                                LineBreakMode="WordWrap"
+                                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, elit tincidunt ornare fermentum, nisi libero dapibus lectus, sed interdum mauris eros nec arcu."
+                                TextColor="Black"/>
+                    </Grid>
+                </Frame>
+            </Frame>
+            
+            <Frame Padding="0"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                Margin="10">
+
+                <Frame BackgroundColor="Beige">
+                    <Grid HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"                         
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                        FontFamily="FontAwesome6Solid"
+                                        FontSize="Large"
+                                        TextColor="Chartreuse"/>
+                                    <Span Text=" "/>
+                                    <Span Text="Sat, 24-03-16" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="3" Grid.Row="0"                      
+                            Grid.ColumnSpan="2"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="12:30 PM" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Grid.Column="0" Grid.Row="1"
+                                Grid.ColumnSpan="4"
+                                Text="Tute Pack Dispatched"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                FontSize="Medium"/>
+                                
+                        <Label Grid.Column="0" Grid.Row="2"
+                                Grid.ColumnSpan="4"
+                                LineBreakMode="WordWrap"
+                                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, elit tincidunt ornare fermentum, nisi libero dapibus lectus, sed interdum mauris eros nec arcu."
+                                TextColor="Black"/>
+                    </Grid>
+                </Frame>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDemo.Views.Contact"
+             xmlns:fontAwesome="clr-namespace:MauiAppDemo.Helpers"
+             Shell.NavBarIsVisible="True"
+             BackgroundColor="{StaticResource PageBackground}"
+             Title="Contact Us">
+    <ScrollView>
+        
+        <VerticalStackLayout>
+            <Frame Margin="15,5"
+                    Padding="20">
+                <StackLayout>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static fontAwesome:FontAwesomeIcons.Envelope}"
+                                                FontFamily="FontAwesome6Solid"
+                                                Size="36"
+                                                Color="{StaticResource Secondary}"/>
+                        </Image.Source>
+
+                    </Image>
+
+                    <Label Text="Mail Us"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"/>
+
+                    <BoxView Margin="0,0,0,10"/>
+
+                    <Label Text="info@bloom.lk"
+                            HorizontalOptions="Center">
+                    </Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame Margin="15,5"
+                    Padding="20">
+                <StackLayout>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static fontAwesome:FontAwesomeIcons.LocationDot}"
+                                                FontFamily="FontAwesome6Solid"
+                                                Size="36"
+                                                Color="{StaticResource Secondary}"/>
+                        </Image.Source>
+                    </Image>
+
+                    <Label Text="Our Location"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"/>
+
+                    <BoxView Margin="0,0,0,10"/>
+
+                    <StackLayout HorizontalOptions="Center">
+                        <Label Text="No. 247, Metro Building, 3rd Floor,"
+                            LineBreakMode="WordWrap"
+                            HorizontalOptions="Center"/>
+
+                        <Label Text="Kirillawala, Kadawatha,"
+                            LineBreakMode="WordWrap"
+                            HorizontalOptions="Center"/>
+
+                        <Label Text="Sri Lanka"
+                            LineBreakMode="WordWrap"
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+            <Frame Margin="15,5"
+                    Padding="20">
+                <StackLayout>
+                    <Image>
+                        <Image.Source>
+                            <FontImageSource Glyph="{x:Static fontAwesome:FontAwesomeIcons.Phone}"
+                                                FontFamily="FontAwesome6Solid"
+                                                Size="36"
+                                                Color="{StaticResource Secondary}"/>
+                        </Image.Source>
+
+                    </Image>
+
+                    <Label Text="Call Us"
+                            FontAttributes="Bold"
+                            HorizontalOptions="Center"/>
+
+                    <BoxView Margin="0,0,0,10"/>
+
+                    <Label Text="+94 74 071 8888"
+                            HorizontalOptions="Center">
+                    </Label>
+
+                    <Label Text="+94 11 413 0110"
+                            HorizontalOptions="Center">
+                    </Label>
+                </StackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

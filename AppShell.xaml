@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Views="clr-namespace:MauiAppDemo.Views"
+    xmlns:local="clr-namespace:MauiAppDemo"
+    xmlns:menu="clr-namespace:MauiAppDemo.Views.SideMenu"
+    xmlns:fontAwesome="clr-namespace:MauiAppDemo.Helpers"
+    Title="MauiAppDemo" 
+    Shell.TabBarIsVisible="False"
+    Shell.NavBarIsVisible="False"
+    Shell.FlyoutBackdrop="#95000000">
+
+    <Shell.FlyoutHeader>
+        <menu:SideMenuHeader/>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <menu:SideMenuFooter />
+    </Shell.FlyoutFooter>
+    
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource PrimaryNavColor}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="#B4FFFF" />
+                <Setter Property="Shell.UnselectedColor" Value="White" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="#777777"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="Black"/>
+            </Style>
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}"/>
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+
+            <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource PrimaryNavColor}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource SideMenuSelection}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="Black" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <!--
+            Custom Style you can apply to any Flyout Item
+            -->
+            <Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Transparent" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource PrimaryNavColor}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource SideMenuSelection}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="Black" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <ShellContent FlyoutItemIsVisible="False" Route="IntroPage" ContentTemplate="{DataTemplate local:IntroPage}" Style="{StaticResource BaseStyle}"/>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.House}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="WebViewVideo"
+            ContentTemplate="{DataTemplate Views:WebViewVideo}"
+            Route="AccountSettings">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.UserGear}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="Notifications"
+            ContentTemplate="{DataTemplate Views:Notifications}"
+            Route="Notifications">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.Bell}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Youtube"
+            ContentTemplate="{DataTemplate Views:YoutubeVideo}"
+            Route="Notes">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.Clipboard}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+            Title="Contact Us"
+            ContentTemplate="{DataTemplate Views:Contact}"
+            Route="Contact"
+            Style="{StaticResource BaseStyle}">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.Phone}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent> 
+        
+        <ShellContent
+            Title="EmbeddedVideo"
+            ContentTemplate="{DataTemplate Views:EmbeddedVideo}"
+            Route="Help"
+            Style="{StaticResource BaseStyle}">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.CircleQuestion}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>    
+
+         <ShellContent
+            Title="Other Video"
+            ContentTemplate="{DataTemplate Views:OtherMedia}"
+            Route="About"
+            Style="{StaticResource BaseStyle}">
+
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                    Glyph="{x:Static fontAwesome:FontAwesomeIcons.CircleInfo}"
+                                    Color="{StaticResource PrimaryNavColor}"/>
+            </ShellContent.Icon>
+        </ShellContent>     
+    </FlyoutItem>
+    
+    <MenuItem Text="Logout" 
+              Clicked="OnLogoutClicked">
+        <MenuItem.IconImageSource>
+            
+                <FontImageSource FontFamily="FontAwesome6Solid"
+                                 Glyph="{x:Static fontAwesome:FontAwesomeIcons.PowerOff}"
+                                 Color="{StaticResource PrimaryNavColor}"/>
+        </MenuItem.IconImageSource>
+    </MenuItem>
+</Shell>

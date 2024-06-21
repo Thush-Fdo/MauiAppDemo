@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDemo.IntroPage"
+             Title="IntroPage"
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="White">
+
+    <Grid ColumnDefinitions="0.5*, 0.5*" RowDefinitions="0.4*, 0.6*" 
+              Background="white">
+        
+        <Image Source="logo.png" 
+               Grid.Row="0"  
+               Grid.Column="0" 
+               Grid.ColumnSpan="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" 
+               WidthRequest="250"
+               Aspect="AspectFit"/>
+        
+
+        <Frame CornerRadius="10" Grid.Column="{OnPlatform Default=0, WinUI=1, MacCatalyst=1}"  BorderColor="White" HeightRequest="350" Background="White"
+                  Grid.Row="{OnPlatform Default=1, WinUI=0,MacCatalyst=0}" 
+                  WidthRequest="380" VerticalOptions="{OnPlatform Default=Start, WinUI=Center , MacCatalyst=Center}"
+                  Grid.ColumnSpan="{OnPlatform Default=2, WinUI=1, MacCatalyst=1}" 
+                  Grid.RowSpan="{OnPlatform Default=1, WinUI=2, MacCatalyst=2}" >
+            <Grid IsClippedToBounds="True" HeightRequest="350" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+
+                <Label Padding="0,10,0,0"  
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center" 
+                       VerticalTextAlignment="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Welcome" FontSize="32" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <VerticalStackLayout Grid.Row="1" Spacing="15">
+                    <Entry Placeholder="Username" />
+                    <Entry Placeholder="Password" IsPassword="True" />
+                </VerticalStackLayout>
+
+                <Grid ColumnDefinitions="0.5*,0.5*" Grid.Row="2" Padding="12,0,0,0"  VerticalOptions="Start">
+                    <HorizontalStackLayout VerticalOptions="Center" Padding="10,0,0,0" >
+                        <CheckBox Color="{StaticResource Primary}"/>
+                        <Label  Text="Remember me"  FontSize="12" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                    <Label Text="Forgot password?" Grid.Column="1"  TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" Padding="10,0,0,0" FontSize="12"  VerticalOptions="Center" />
+                </Grid>
+
+                <Button Text="LOGIN" x:Name="loginButton" HeightRequest="40" VerticalOptions="End"
+                        HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
+                        Padding="0"  FontAttributes="Bold"
+                        Grid.Row="3" Background="{StaticResource Primary}"
+                        Clicked="OnLoginClicked"/>
+
+
+                <Label Grid.Row="4" Padding="0,12,0,0"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="14">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Don't have an account?   " />
+                            <Span Text="Sign Up" TextDecorations="Underline" TextColor="{StaticResource Primary}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppDemo.Views.SideMenu.SideMenuFooter"
+             HeightRequest="125">
+    <VerticalStackLayout>
+       <Label TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="IMOS " />
+                        <Span Text="v1.0.0 Beta" />
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
+
+            <Label TextColor="Black"
+                   FontAttributes="Italic"
+                   HorizontalOptions="Center">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="(" />
+                        <Span Text="Dev" />
+                        <Span Text=")" />
+                    </FormattedString>
+                </Label.FormattedText>
+
+            </Label>
+
+            <BoxView Margin="0,5"
+                     HeightRequest="1"
+                     Color="BLack"/>
+            
+            <Label Text="Powered By Ontash"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   FontSize="Caption" />
+            <Label Text="Copyright © All rights reserved."
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   FontSize="Caption"/>
+    </VerticalStackLayout>
+</ContentView>
